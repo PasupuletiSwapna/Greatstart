@@ -11,6 +11,17 @@ namespace unittestEX.cs
    /// </summary>
     public class product
     {
+        public product()
+        {
+            Console.WriteLine("Product instance created");
+        }
+        public product(int prodid, string prname, string desc):this()
+        {
+            this.ProdId = prodid;
+            this.Prname = prname;
+            this.Desc = desc;
+            Console.WriteLine("product instance has a name:"  + Prname);
+        }
         private string prname;
 
         public string Prname
@@ -36,9 +47,10 @@ namespace unittestEX.cs
         public string Sayhello()
 
        {
-            return "Hello"  + Prname + "(" + ProdId + "):" + desc;
+            return "Hello"+  Prname  + "(" + ProdId + "):" + desc;
 
         }
+       
 
     }
 }

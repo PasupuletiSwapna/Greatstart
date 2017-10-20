@@ -31,5 +31,25 @@ namespace unittestEX.cs.Tests
             //Assert
             Assert.AreEqual(expected,actual);
         }
+        public void Sayhello_Parameterizedconstructor()
+        {
+            //Arrange
+            var currentprod = new product(1,"saw","15-inch steel blade hand saw");
+            
+            var expected = "Hello saw (1):15-inch steel blade hand saw";
+
+
+
+            //Act
+
+            var actual = currentprod.Sayhello();
+
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+
+
     }
 }
