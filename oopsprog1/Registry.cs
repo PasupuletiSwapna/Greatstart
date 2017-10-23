@@ -15,16 +15,27 @@ namespace oopsprog1
             //...
             list.Add(employee);
         }
-
         public void List()
         {
-            //...
             foreach (var employee in list)
             {
-                Console.WriteLine("Name:" + employee.Name);
-                Console.WriteLine("Salary:" + employee.Salary);
-                Console.WriteLine();
+                Console.WriteLine(employee);
             }
+        }
+        public override string ToString()
+        {
+            //return base.ToString();
+        
+        
+            
+            var output = "";
+            foreach (var employee in list)
+            {
+
+                output += employee + "\n";
+            } 
+            
+            return output;
         }
     }
 }

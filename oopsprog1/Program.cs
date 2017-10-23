@@ -22,7 +22,8 @@ namespace oopsprog1
             } while (added);
             Console.WriteLine("=============");
 
-            registry.List();
+            // registry.List();
+            Console.WriteLine(registry);
         }
         private static bool AddEmployee(Registry registry)
         { 
