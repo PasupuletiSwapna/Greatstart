@@ -13,11 +13,7 @@ namespace oopsprog1
 
         static void Main(string[] args)
         {
-            //var e1 = new Employee("Sai");
-            //e1.Salary = 25000;
-
-            //var e2 = new Employee("Ram");
-            //e2.Salary = 23000;
+            
 
             var registry = new Registry();
             var added = true;
