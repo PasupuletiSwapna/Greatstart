@@ -10,8 +10,8 @@ namespace generic_sample
     {
         static void Main(string[] args)
         {
-class
-
+            Mygenericclass<int> intgenericclass = new Mygenericclass<int>(10);
+            intgenericclass.genericmethod(200);
         }
     }
 }
